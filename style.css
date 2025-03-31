@@ -10,6 +10,8 @@
     --secondary-color: #2ecc71;
     --dark-color: #2c3e50;
     --light-color: #ecf0f1;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -32,6 +34,7 @@ body{
     text-align: left;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: justify;
 }
 
 .par {
@@ -99,7 +102,9 @@ h2{
     color: white !important;
 }
 
-
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
 
 .menu {
     display: flex;
@@ -130,6 +135,10 @@ h2{
 
 .menu ul li a:hover {
     color: yellowgreen;
+}
+
+.navbar {
+    backdrop-filter: blur(4px);
 }
 
 .search {
@@ -276,16 +285,16 @@ h2{
     transition: background-color 0.3s ease-in-out;
 }
 
-.card-body{
+/* .card-body{
     background-color: #f4f4f4;
-}
+} */
 
 .w-full {
     width: 100% !important;
 }
 
-#features{
-    background-color: #f4f4f4; 
+.text-left{
+    text-align: left;
 }
 
 footer {
@@ -335,14 +344,45 @@ footer {
         padding: 15px;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* position: absolute; */
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        color: black;
     }
 }
 
 @media (max-width: 1024px) {
     /* iPad specific styles */
+    /* Navbar transition styles */
     .navbar {
-        flex-direction: column;
-        align-items: center;
+        transition: all 0.3s ease;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .navbar-scrolled {
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background when scrolled */
+        transform: translateY(-10px); /* Move up slightly */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Make all text in navbar white when scrolled */
+    /* .navbar-scrolled .nav-link,
+    .navbar-scrolled .logo {
+        color: white !important;
+    } */
+
+    /* Change the toggler icon to white when scrolled */
+    .navbar-scrolled .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    #about {
+        margin-top: 10%;
     }
 
     .menu ul {
@@ -366,15 +406,61 @@ footer {
     .images {
         margin-top: 20px;
     }
+
+    .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
+    }
+    
+    /* Additional selector for when navbar is scrolled */
+    .navbar-scrolled .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
+    }
 }
 
 
 
 
 @media (max-width: 768px) {
+    /* Navbar transition styles */
     .navbar {
-        flex-direction: column;
-        align-items: center;
+        transition: all 0.3s ease;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background-color: transparent;
+    }
+
+    .navbar-scrolled {
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background when scrolled */
+        transform: translateY(-10px); /* Move up slightly */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Make all text in navbar white when scrolled */
+    /* .navbar-scrolled .nav-link,
+    .navbar-scrolled .logo {
+        color: white !important;
+    } */
+
+    /* Change the toggler icon to white when scrolled */
+    .navbar-scrolled .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
+    }
+    
+    /* Additional selector for when navbar is scrolled */
+    .navbar-scrolled .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
     }
 
     .menu ul {
@@ -398,12 +484,54 @@ footer {
     .images {
         margin-top: 20px;
     }
+
+    #home {
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 480px) {
     .srch {
         width: 150px;
         font-size: 12px;
+    }
+
+    /* Navbar transition styles */
+    .navbar {
+        transition: all 0.3s ease;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background-color: transparent;
+    }
+
+    .navbar-scrolled {
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background when scrolled */
+        transform: translateY(-10px); /* Move up slightly */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Make all text in navbar white when scrolled */
+    /* .navbar-scrolled .nav-link,
+    .navbar-scrolled .logo {
+        color: white !important;
+    } */
+
+    /* Change the toggler icon to white when scrolled */
+    .navbar-scrolled .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
+    }
+    
+    /* Additional selector for when navbar is scrolled */
+    .navbar-scrolled .navbar-toggler.is-active svg {
+        color: white !important;
+        stroke: white !important;
     }
 
     .btn {
@@ -417,6 +545,10 @@ footer {
     .content .par {
         font-size: 12px;
     }
+
+    .nav-link {
+        color: black !important;
+    }
 }
 
 @media (max-width: 360px) {
@@ -426,5 +558,9 @@ footer {
 
     .content h1 {
         font-size: 10px !important;
+    }
+
+    .nav-link {
+        color: black !important;
     }
 }
