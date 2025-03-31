@@ -7,410 +7,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .icon-square {
-        width: 3rem;
-        height: 3rem;
-        border-radius: .75rem;
-        }
-    </style>
-
 </head>
-
 
 <body>
     <div class="container" id="#">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">KP</h2>
+        <!-- Navbar with hamburger menu -->
+        <!-- Navbar with hamburger menu -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="icon">
+                    <h2 class="logo">KP</h2>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-3">
+                        <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    </ul>
+                    <!-- <div class="search d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Ask Me Anything?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div> -->
+                </div>
             </div>
-            
-            <div class="menu">
-               <ul>
-                   <li><a href="#home">HOME</a></li>
-                   <li><a href="#services">SERVICES</a></li>
-                   <li><a href="#features">FEATURES</a></li>
-                   <li><a href="#contact">CONTACT</a></li>
-                   <li><a href="#about">ABOUT</a></li>
-                   <li><a href="#testimonials">TESTIMONIALS</a></li>
-                   <li><a href="#forums">FORUMS</a></li>
-                </ul>
-            </div>
-            
-            <div class="search">
-                <input class="srch" type="text" name="" placeholder="Ask Me Anything?">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
-        </div>
+        </nav>
 
+        <!-- Home section -->
         <section id="home">
-            
-        <div class="content_and_image">
-            <div class="content">
-                <h1 class="border-bottom fw-dark">I'm <br/> <span>Christiana Chimeremeze</span> <br>(A.k.a Kristie Prince)</h1>
-                <p class="par"><span class="official">This Is My Official Portfolio Website.</span>  
-                    <br /> Certified Family Life Coach & Convener of 21st Century Ladies.
-                </p>
-                <a href="#"> <button class="cn">HIRE ME</button></a>
-            </div>
-            
-            
-            <div class="images">
-                <img src="./images/220568077_473267497050948_4658086270965597519_n.jpg" alt="profile-img">
-            </div>
-        </div>
-
-        </section>
-
-        
-        <section id="features">
-            <div class="container px-4 py-5 text-center" id="features">
-                <h2 class="pb-2">Features</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                  <div class="col d-flex flex-column align-items-start">
-                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                      <img src="./people.svg" alt="people svg"/>
-                    </div>
-                    <div>
-                      <h3 class="fw-dark">Personalized Counselling Services</h3>
-                      <p>
-                        <ul class="lead">
-                          <li>Tailored Guidance: Customized sessions to address individual and couple-specific challenges.</li>
-                          <li>Strengthening emotional bonds and improving communication.</li>
-                          <li>Spiritual Mentorship: Integration of faith-based principles for personal and relationship growth.</li>
-                       </ul>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex align-items-start flex-column">
-                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                      <img src="./book.svg" alt="book"/>
-                    </div>
-                    <div>
-                      <h3 class="fw-dark">Comprehensive Programs</h3>
-                      <p>
-                        <ul class="lead">
-                           <li>Pre-Marital Counselling: Preparing couples for a strong and lasting marriage.</li>
-                           <li>Marriage Enrichment Program: Practical exercises to improve emotional intimacy and partnership.</li>
-                           <li>Individual Healing Sessions: Focusing on personal growth and overcoming past wounds.</li>
-                         </ul>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex align-items-start flex-column">
-                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                      <img src="./phone.svg" alt="phone svg"/>
-                    </div>
-                    <div>
-                      <h3 class="fw-dark">Accessibility & Support</h3>
-                      <p>
-                        <ul class="lead">
-                         <li>Online Sessions: Virtual counselling for convenience and accessibility.</li>
-                         <li>Flexible Scheduling: Sessions tailored to fit busy lifestyles.</li>
-                         <li>24/7 Support: Access to helpful resources and follow-up communication.</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-
-
-        <section id="services">
-            <div class="container py-5">
-                <header>
-                 
-                  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h2 class="pb-2 fw-dark text-body-emphasis">Services</h2>
-                    <p class="fs-5 text-body-secondary invest_text">Invest In your Growth and Relationship Success By Choosing The Path That Transforms Your Relationship And Strengthens Your Spiritual Journey - With Tailored Plans That Meet Your Unique Needs. </p>
-                  </div>
-                </header>
-              
-                <main>
-                  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                    <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                          <h4 class="my-0 fw-normal">Pre-marital counselling</h4>
-                        </div>
-                        <div class="card-body">
-                          
-                          <ul class="list-unstyled mt-3 mb-4">
-                            <li>✅ BASIC: $6/₦10 000 (Per hour)</li>
-                            <li>✅ SILVER: $20/₦30 000 (Full training)</li>
-                            <li>✅ GOLD: $33/₦50 000 (Full training)</li>
-                            <li>✅ 30minutes Free Clarity Call</li>
-                          </ul>
-                          <button type="button" class="pricing-button w-40 btn btn-light">Book Here</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                          <h4 class="my-0 fw-normal">Post-marital counselling</h4>
-                        </div>
-                        <div class="card-body">
-                          
-                          <ul class="list-unstyled mt-3 mb-4">
-                            <li>✅ BASIC: $10/₦15 000 (Per hour)</li>
-                            <li>✅ SILVER: $23/₦35 000 (Full training)</li>
-                            <li>✅ GOLD: $36/₦55 000 (Full training)</li>
-                            <li>✅ 30minutes Free Clarity Call</li>
-                          </ul>
-                          <button type="button" class="pricing-button w-40 btn btn-light">Book Here</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                          <h4 class="my-0 fw-normal">Spiritual Growth Mentorship</h4>
-                        </div>
-                        <div class="card-body">
-                          
-                          <ul class="list-unstyled mt-3">
-                            <li>✅ $100 Yearly</li>
-                            <li class="pb-5">✅ 30minutes Free Clarity Call</li>
-                            
-                          </ul>
-                          <button type="button" class="pricing-button w-40 btn btn-light mb-2">Book Here</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              
-        </section>
-
-        <section id="forums">
-            
-            <section class="py-4 text-center container">
-                <div class="row py-lg-5">
-                  <div class="col-lg-6 col-md-8 mx-auto">
-                    <h2 class="pb-2 fw-dark">Forums</h2>
-                    <p class="fs-5 text-body-secondary">
-                      "Join The Conversation, Grow Together!" <br/>
-                      A Safe Space To Share, Learn And Connect With Others On The Journey Of Marriage And Spirtual Growth.
-    
+            <div class="row content_and_image">
+                <div class="col-lg-6 content">
+                    <h1 class="border-bottom fw-dark text-white">I'm <br/> <span>Christiana Chimeremeze</span> <br>(A.k.a Kristie Prince)</h1>
+                    <p class="par text-white"><span class="official">This Is My Official Portfolio Website.</span>  
+                        <br /> Certified Family Life Coach & Convener of 21st Century Ladies.
                     </p>
+                    <a href="#"> <button class="cn btn">HIRE ME</button></a>
                 </div>
-            </section>
-             
-            <div class="album py-5 bg-body-tertiary">
-                <div class="container">
-            
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="./images/pregnantwarriors.jpg" alt="pregnant-warriors" height="225" width="100%">
-                        <div class="card-body">
-                          <p class="lead card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="/images/LCP.jpg" alt="Level-changing-prayers img" height="225" width="100%">
-                        <div class="card-body">
-                          <p class="lead card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card shadow-sm">
-                        <img src="/images/Outreach.jpg" alt="outreach-img" height="225" width="100%">
-                        <div class="card-body">
-                          <p class="lead card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
+                
+                <div class="col-lg-6 images">
+                    <img src="./images/220568077_473267497050948_4658086270965597519_n.jpg" alt="profile-img" class="img-fluid">
                 </div>
-              </div>
-            
-            
-        </section>
-        
-        <section id="testimonials">
-          <section class="w-100 p-4 mb-4">
-            <style>
-              .testimonial-card .card-up {
-                height: 120px;
-                overflow: hidden;
-                border-top-left-radius: 0.25rem;
-                border-top-right-radius: 0.25rem;
-              }
-      
-              .testimonial-card .avatar {
-                width: 110px;
-                margin-top: -60px;
-                overflow: hidden;
-                border: 3px solid #fff;
-                border-radius: 50%;
-              }
-            </style>
-      
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-10 col-xl-8 text-center">
-                <h2 class="pb-2 mb-4 mt-4">Testimonials</h2>
-                <p class="fs-5 text-body-secondary">
-                  "Real Stories! Real Transformations!" <br/>
-                  Hear From Those Whose Lives And Relationships Have Been Transformed Through Faith-Filled Guidance And Compassionate Mentorship.
-
-                </p>
-              </div>
             </div>
-      
-            <div class="row text-center d-flex align-items-stretch">
-              <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                  <div class="card-up" style="background-color: yellowgreen;"></div>
-                  <div class="avatar mx-auto bg-white">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle img-fluid">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="mb-4">Mrs KD</h4>
-                    <hr>
-                    <p class="leads dark-grey-text mt-4">
-                      <i class="fas fa-quote-left pe-2"></i>"I had a one hour coaching session with Coach KP and the amazing part of the session was her ability to identify the problem swiftly and profer a solution that worked. <br/> Coach KP has helped restore the lost communication and romance in my marriage."
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                  <div class="card-up" style="background-color: yellowgreen;"></div>
-                  <div class="avatar mx-auto bg-white">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle img-fluid">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="mb-4">Mrs B.</h4>
-                    <hr>
-                    <p class="leads dark-grey-text mt-4">
-                      <i class="fas fa-quote-left pe-2"></i>"Coach KP's faith-based approach and biblical principles intrigues me! She helped me see my marriage as a sacred covenant between me and God, as an extension of my Christian walk with Christ and the HolySpirit. <br/> Her guidance was always grounded in Biblical principles, infused in prayer and a lot of helpful resources that I'm yet to fully cover."
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-0 d-flex align-items-stretch">
-                <div class="card testimonial-card">
-                  <div class="card-up" style="background-color: yellowgreen;"></div>
-                  <div class="avatar mx-auto bg-white">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle img-fluid">
-                  </div>
-                  <div class="card-body">
-                    <h4 class="mb-4">John Smith</h4>
-                    <hr>
-                    <p class="leads dark-grey-text mt-4">
-                      <i class="fas fa-quote-left pe-2"></i>"Coach KP has a deep understanding of the complexities of relationships and the challenges that couples face, and she approached our sessions with empathy, wisdom and grace. <br/> She gave rapt attention to my concerns and provided me with practical tools and strategies that we could use to improve our communication and build a stronger, more resilient marrriage."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </section>
 
-        <section id="about" class="py-4 btn-light text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6 w-full">
-                <h2 class="mb-3 fw-bold text-body-emphasis">About Me</h2>
-                <div class="card w-full shadow-sm">
-                  
-                  <div class="card-body w-full">
-                    <img src="./images/PK_blue.jpg" class="img-fluid rounded-circle mb-3" width="120">
-                    <p class="lead">Christiana Chimeremeze is a Certified Family Life Coach. She specialises on Marriage and Parent coaching and likes to groom, birth, and establish Model marriages. This, she does through her one on one coaching sessions and through her bi-monthly Relationship program tagged "Wedding Bells" in conjuction with her husband, Pst Prince Chimeremeze.<br>
-                      <br> She is a God Chaser and so full of love for God and humanity. She is passionate about Purity, Prayer and Power.
-                       This passion has birthed different expressions like  The "Girls safe corner" which is a discipleship platform for girls,
-                       The pregnant Warrior forum: a support and prayer group for pregnant women. She is also the host of the weekly level changing prayers online.<br>
-                       
-                       <br>Pastor Kristie is the founder of the 21st century ladies Network with members all over the world. She loves to see the whole earth filled with God's glory and through her prophetic teachings prepare for Christ a glorious and a rapturable church without spot or wrinkle.<br>
-                       
-                       <br>Kristie is also the coordinator of the Women on Fire Network, Northern Zone. She is Popularly known as Kristie Prince.<br>
-                       
-                       <br>She is Married to Pst. Prince Chimeremeze, The  Senior Pastor of Global Kingdom Reformers and are blessed with an amazing daughter.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <section id="contact ">
-          <div class="container d-flex flex-column align-items-center w-full">
-            <h2 class="pb-2 mb-4 mt-4">Contact Us</h2>
-            <form class="w-full px-4">
-              <input type="email" class="form-control w-full mb-2 mx-auto" placeholder="Your Email">
-              <textarea class="form-control w-full mb-2 mx-auto" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn-light">Send</button>
-            </form>
-
-          </div>
-
-        </section>
-
-        <section id="footer"  class="gradient-background text-center py-5 w-full">
-          <div class="container-fluid">
-            <footer class="py-5 mx-5">
-              <div class="w-full">
-                <!-- <div class="col-6 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
-                    <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-body-secondary">Services</a></li>
-                    <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-body-secondary">About</a></li>
-                    <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li>
-                    <li class="nav-item mb-2"><a href="#testimonials" class="nav-link p-0 text-body-secondary">Testimonials</a></li>
-                    <li class="nav-item mb-2"><a href="#forums" class="nav-link p-0 text-body-secondary">Forums</a></li>
-                  </ul>
-                </div> -->
-          
-               
-          
-                <div class="w-full mb-3 px-4">
-                  <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-2">
-                      <label for="newsletter1" class="visually-hidden">Email address</label>
-                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                      <button class="btn" type="button">Subscribe</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              
-              
-          
-              <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 mx-5 border-top">
-                <p class="link-body-emphasis">© <script>document.write(new Date().getFullYear());</script> KristiePrince, Inc. All rights reserved.
-                <br>Tel +2348134941924, 09043701828</p>
-                <ul class=" d-flex py-2">
-                  <li class="ms-2"><a class="link-body-emphasis" href="#twitter"><img src="./twitter.svg" width="24" height="20">
-                  <li class="ms-2"><a class="link-body-emphasis" href="https://web.facebook.com/profile.php?id=100031031064704"><img src="./facebook.svg" width="24" height="20">
-                  <li class="ms-2"><a class="link-body-emphasis" href="https://www.instagram.com/kristieprince_?igsh=MXVrbzEzYmd1N3QybQ=="><img src="./instagram.svg" width="24" height="20">
-                  <li class="ms-2"><a class="link-body-emphasis" href="mailto:kristieprincec@gmail.com"><img src="./email.svg" width="24" height="20"></a>
-                  <li class="ms-2"><a class="link-body-emphasis" href="https://www.tiktok.com/@kristieprince_?_t=ZM-8txmYSMoX2r&_r=1"><img src="./tiktok.svg" width="24" height="20"></a>
-                </ul>
-              </div>
-            </footer>
-          </div>
-
-        </section>
-     
+        <!-- Include other sections -->
+        <div id="features-section"></div>
+        <div id="services-section"></div>
+        <div id="forums-section"></div>
+        <div id="testimonials-section"></div>
+        <div id="about-section"></div>
+        <div id="contact-section"></div>
+        <div id="footer-section"></div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="index.js" charset="utf-8"></script>
 </body>
 </html>
-
-
